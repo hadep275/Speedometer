@@ -17,7 +17,8 @@ Experience the speedometer live! Check out the [browser demo](https://hadep275.g
 
 ## Video Demo
 
-Watch a detailed demonstration of the speedometer by following this [video demo link](https://github.com/hadep275/Speedometer/assets/65734173/36480516-4b81-476f-be3b-656383b1a810)
+Watch a detailed demonstration of the speedometer by following this [video demo link](https://github.com/hadep275/Speedometer/assets/65734173/e5466c91-4c2b-43ce-8cdf-1c9cfa11a5cf)
+
 
 
 ## How to Use
