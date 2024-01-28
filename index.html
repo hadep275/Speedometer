@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="gauge-solid.svg" />
+
+    <title>Speedometer</title>
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #edaac2;
+      }
+      #foo {
+        height: 200px;
+        width: 400px;
+      }
+      .wrap {
+        position: absolute;
+        top: 210px;
+        left: 50px;
+      }
+      .zero {
+        position: absolute;
+        top: 165px;
+        left: 80px;
+        color: #0b970b;
+      }
+      .twohundred {
+        position: absolute;
+        top: 165px;
+        left: 280px;
+        color: #ff0000;
+      }
+      #campo {
+        padding: 8px;
+        font-size: 14px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #db34c8;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #2600ff;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="foo"> </canvas>
+    <div class="zero">0</div>
+    <div class="twohundred">2500</div>
+    <div class="wrap">
+      <button onclick="chamar()">Try</button>
+      <input type="text" id="campo" placeholder="Enter a number (0-2500)" />
+    </div>
+    <script>
+      var opts = {
+        lines: 12,
+        angle: 0.0,
+        lineWidth: 0.44,
+        pointer: {
+          length: 0.5,
+          strokeWidth: 0.035,
+          color: "red",
+        },
+        limitMax: false,
+        colorStart: "blue",
+        colorStop: "#eeff00",
+        StrokeColor: "#E0E0E0",
+        generateGradient: true,
+      };
+      var target = document.getElementById("foo");
+      var gauge = new Gauge(target).setOptions(opts);
+      gauge.maxValue = 2500;
+      gauge.animationSpeed = 32;
+      function chamar() {
+        var valor = parseFloat(document.getElementById("campo").value);
+        if (isNaN(valor) || valor < 0 || valor > 2500) {
+          alert("Please enter a valid number between 0 and 2500.");
+        } else {
+          gauge.set(valor);
+        }
+      }
+    </script>
+  </body>
+</html>
