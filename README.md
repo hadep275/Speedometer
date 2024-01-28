@@ -2,7 +2,7 @@
 
 A visually enhanced and modernized speedometer built with HTML, CSS, and JavaScript using the [gauge.js](https://bernii.github.io/gauge.js/) library. This speedometer provides a sleek and responsive user interface for monitoring values within a range of 0 to 2500.
 
-![Speedometer Demo](hadep275.github.io/speedometer/)
+[Speedometer Demo](hadep275.github.io/speedometer/)
 
 ## Features
 
