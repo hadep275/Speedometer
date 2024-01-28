@@ -1,4 +1,4 @@
-[screen-capture (7).webm](https://github.com/hadep275/Speedometer/assets/65734173/a52be2ce-a444-47f6-be6e-5cea61ad5403)# Speedometer
+# Speedometer
 
 A visually enhanced and modernized speedometer built with HTML, CSS, and JavaScript using the [gauge.js](https://bernii.github.io/gauge.js/) library. This speedometer provides a sleek and responsive user interface for monitoring values within a range of 0 to 2500.
 
