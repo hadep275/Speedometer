@@ -58,7 +58,7 @@ var opts = {
 
 ## Contributors
 
-- [Your Name]
+- [hadep275](https://github.com/hadep275)
 
 ## License
 
